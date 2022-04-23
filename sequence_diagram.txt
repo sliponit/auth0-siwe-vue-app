@@ -1,0 +1,23 @@
+title OIDC SIWE protocol flow
+
+participant Client Web app
+participant OIDC provider (auth0 domain)
+participant SIWE provider (oidc.login.xyz)
+participant Client Wallet
+
+
+Client Web app->OIDC provider (auth0 domain): Redirect with state parameter\n/u/login?state=  
+note over Client Web app,OIDC provider (auth0 domain):Consent screen
+OIDC provider (auth0 domain)->SIWE provider (oidc.login.xyz): Redirect\n /?nonce=&domain=&redirect_uri=.../login/callback&state=&client_id=
+note over OIDC provider (auth0 domain),SIWE provider (oidc.login.xyz):Consent screen
+note over SIWE provider (oidc.login.xyz),Client Wallet:Possibly wallet connect
+SIWE provider (oidc.login.xyz)->Client Wallet:Request sign-in with ethereum 
+note over Client Wallet: Consent screen in wallet
+Client Wallet-->SIWE provider (oidc.login.xyz): User submits signature
+SIWE provider (oidc.login.xyz)->SIWE provider (oidc.login.xyz): Verify signature
+SIWE provider (oidc.login.xyz)->OIDC provider (auth0 domain):\nCall /login/callback?code=
+OIDC provider (auth0 domain)->Client Web app:Call /?code=
+Client Web app->OIDC provider (auth0 domain):POST /oauth/token\n {"client_id","code_verifier","grant_type":"authorization_code","code","redirect_uri":}
+OIDC provider (auth0 domain)-->Client Web app:access token and user info
+== Process to resolve blockchain data on Ethereum/ENS ==
+
