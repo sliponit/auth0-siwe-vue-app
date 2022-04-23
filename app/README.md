@@ -18,7 +18,7 @@ The project needs to be configured with your Auth0 domain and client ID in order
 
 To do this, define env variables
 
-```json
+```
 VUE_APP_DOMAIN=
 VUE_APP_CLIENT_ID=
 
