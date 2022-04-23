@@ -7,7 +7,6 @@ import "highlight.js/styles/github.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faLink, faUser, faPowerOff } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { domain, clientId as client_id } from "../auth_config.json";
 
 const app = createApp(App);
 
@@ -18,8 +17,8 @@ app
   .use(createRouter(app))
   .use(
     createAuth0({
-      domain,
-      client_id,
+      domain: process.env.VUE_APP_DOMAIN,
+      client_id: process.env.VUE_APP_CLIENT_ID,
       redirect_uri: window.location.origin,
     })
   )
