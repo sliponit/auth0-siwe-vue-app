@@ -1,12 +1,10 @@
 <template>
   <div class="text-center hero">
-    <img class="mb-3 app-logo" src="/logo.png" alt="Vue.js logo" width="120" />
-    <h1 class="mb-4">OIDC SIWE</h1>
+    <h1 class="mb-4">OIDC - SIWE</h1>
     <p class="lead">
-      This is a sample application that demonstrates an authentication flow using OIDC and SIWE
-      <a
-        href="https://vuejs.org"
-      >Vue.js</a>
+      This is a sample application that demonstrates an authentication flow using
+      <a href="https://openid.net/specs/openid-connect-core-1_0.html">OpenID Connect</a> and <a href="https://eips.ethereum.org/EIPS/eip-4361">SIWE</a>
+      powered by <a href="https://auth0.com">Auth0</a> and <a href="https://login.xyz">Spruce ID</a>
     </p>
   </div>
 </template>

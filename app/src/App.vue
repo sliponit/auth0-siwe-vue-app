@@ -8,7 +8,7 @@
       </div>
     </div>
     <footer class="bg-light text-center p-3">
-      <div class="logo"></div>
+      Reference: <a href="https://auth0.com/blog/sign-in-with-ethereum-siwe-now-available-on-auth0/" target="_blank">Auth0 blog post on Spruce ID integration</a>
     </footer>
   </div>
 </template>
