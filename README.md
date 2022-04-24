@@ -10,4 +10,10 @@ The submission is two-fold:
 
 ![Diagram](./sequence_diagram.png) 
 
-- An example app in [app](./app) deployed on [cloudflare pages](https://oidc-siwe-app.pages.dev)
+- An example app in [app](./app) deployed on [cloudflare pages](https://oidc-siwe-app.pages.dev). The frontend code is a slight modification of auth0-samples/auth0-vue-samples of which this repo is a fork. In the app the use of Spruce https://oidc.login.xyz/ is heavily abstracted by auth0 integration.
+
+
+One of original goal was to replace the auth0 OIDC provider or the SIWE provider with self-hosted alternative.
+
+Reference 
+- https://auth0.com/docs/authenticate/login/redirect-users-after-login
