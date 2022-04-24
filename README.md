@@ -6,7 +6,8 @@ An attempt at understanding a bit more the process when using [OpenID Connect](h
 
 The submission is two-fold:
 
-- Mainly q protocol flow diagram [Diagram source](./sequence_diagram.txt)
-![Diagram](./sequence_diagram.png) heavily inspired by the one ine [Auth0 blog post](https://auth0.com/blog/sign-in-with-ethereum-siwe-now-available-on-auth0/)
+- Mainly a protocol flow diagram [Diagram source](./sequence_diagram.txt) heavily inspired by the one in [Auth0 blog post](https://auth0.com/blog/sign-in-with-ethereum-siwe-now-available-on-auth0/)
+
+![Diagram](./sequence_diagram.png) 
 
 - An example app in [app](./app) deployed on [cloudflare pages](https://auth0.com/blog/sign-in-with-ethereum-siwe-now-available-on-auth0/)
