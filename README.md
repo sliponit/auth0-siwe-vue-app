@@ -2,7 +2,7 @@
 
 Submission for https://amsterdam.ethglobal.com/
 
-An attempt at understanding a bit more the process when using [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html) and [SIWE](https://login.xyz)
+A graphical attempt at understanding a bit more the process when using [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html) and [Sign-in with ethereum](https://login.xyz)
 
 The submission is two-fold:
 
@@ -10,4 +10,4 @@ The submission is two-fold:
 
 ![Diagram](./sequence_diagram.png) 
 
-- An example app in [app](./app) deployed on [cloudflare pages](https://auth0.com/blog/sign-in-with-ethereum-siwe-now-available-on-auth0/)
+- An example app in [app](./app) deployed on [cloudflare pages](https://oidc-siwe-app.pages.dev)
